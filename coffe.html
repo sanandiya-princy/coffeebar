@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bean - Cozy Coffee Shop</title>
+    <link rel="stylesheet" href="css/coffe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-coffee"></i>
+                <span>Brew & Bean</span>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#specialty">Specialty</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Brew & Bean</h1>
+            <p class="hero-subtitle">Where every cup tells a story and every moment is savored</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-primary">Our Menu</a>
+                <a href="#contact" class="btn-secondary">Visit Us</a>
+            </div>
+        </div>
+        <div class="coffee-beans">
+            <div class="bean bean-1"></div>
+            <div class="bean bean-2"></div>
+            <div class="bean bean-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2015, Brew & Bean started as a small dream to create the perfect neighborhood coffee shop. We believe in the art of coffee making and the joy it brings to people's daily lives.</p>
+                    <p>Our beans are sourced from sustainable farms around the world, and each cup is crafted with precision and passion. From our signature espresso to our handcrafted lattes, every drink tells a story of quality and care.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>8+</h3>
+                            <p>Years of Excellence</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Coffee Varieties</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1000+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="coffee-cup">
+                        <i class="fas fa-mug-hot"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-categories">
+                <input type="radio" name="menu-tab" id="tab-coffee" checked>
+                <input type="radio" name="menu-tab" id="tab-pastries">
+                <input type="radio" name="menu-tab" id="tab-sandwiches">
+                <input type="radio" name="menu-tab" id="tab-specials">
+
+                <label for="tab-coffee" class="tab-btn">Coffee</label>
+                <label for="tab-pastries" class="tab-btn">Pastries</label>
+                <label for="tab-sandwiches" class="tab-btn">Sandwiches</label>
+                <label for="tab-specials" class="tab-btn">Specials</label>
+
+                <div class="menu-content">
+                    <div class="menu-items" id="coffee">
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h3>Espresso</h3>
+                                <p>Rich, bold shot of pure coffee essence</p>
+                            </div>
+                            <div class="menu-item-price">$2.99</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h3>Cappuccino</h3>
+                                <p>Espresso with steamed milk foam</p>
+                            </div>
+                            <div class="menu-item-price">$4.99</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h3>Latte</h3>
+                                <p>Smooth espresso with creamy steamed milk</p>
+                            </div>
+                            <div class="menu-item-price">$5.49</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h3>Americano</h3>
+                                <p>Espresso diluted with hot water</p>
+                            </div>
+                            <div class="menu-item-price">$3.49</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h3>Mocha</h3>
+                                <p>Espresso with chocolate and steamed milk</p>
+                            </div>
+                            <div class="menu-item-price">$5.99</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-items" id="pastries">
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h3>Croissant</h3>
+                                <p>Buttery, flaky French pastry</p>
+                            </div>
+                            <div class="menu-item-price">$3.99</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h3>Muffin</h3>
+                                <p>Fresh baked blueberry or chocolate chip</p>
+                            </div>
+                            <div class="menu-item-price">$2.99</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h3>Scone</h3>
+                                <p>Traditional British scone with jam</p>
+                            </div>
+                            <div class="menu-item-price">$3.49</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h3>Cinnamon Roll</h3>
+                                <p>Warm, gooey cinnamon swirl</p>
+                            </div>
+                            <div class="menu-item-price">$4.49</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-items" id="sandwiches">
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h3>Club Sandwich</h3>
+                                <p>Triple decker with turkey, bacon, lettuce</p>
+                            </div>
+                            <div class="menu-item-price">$8.99</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h3>Grilled Cheese</h3>
+                                <p>Toasted sandwich with melted cheese</p>
+                            </div>
+                            <div class="menu-item-price">$6.99</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h3>Veggie Wrap</h3>
+                                <p>Fresh vegetables with hummus</p>
+                            </div>
+                            <div class="menu-item-price">$7.49</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-items" id="specials">
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h3>Seasonal Latte</h3>
+                                <p>Pumpkin spice or peppermint mocha</p>
+                            </div>
+                            <div class="menu-item-price">$6.49</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h3>Iced Coffee</h3>
+                                <p>Cold brew over ice with your choice of milk</p>
+                            </div>
+                            <div class="menu-item-price">$4.99</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h3>Frappuccino</h3>
+                                <p>Blended ice coffee drink</p>
+                            </div>
+                            <div class="menu-item-price">$5.99</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialty Section -->
+    <section id="specialty" class="specialty">
+        <div class="container">
+            <h2 class="section-title">Our Specialty</h2>
+            <div class="specialty-grid">
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Organic Beans</h3>
+                    <p>We source only the finest organic coffee beans from sustainable farms around the world.</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Artisan Roasting</h3>
+                    <p>Our beans are carefully roasted in small batches to bring out the best flavors.</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Handcrafted</h3>
+                    <p>Every drink is made to order by our skilled baristas with attention to detail.</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Eco-Friendly</h3>
+                    <p>We use compostable cups and support environmental initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Visit Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>123 Coffee Street<br>Brewville, BV 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Mon-Fri: 6:00 AM - 8:00 PM</p>
+                            <p>Sat-Sun: 7:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Contact</h3>
+                            <p>Phone: (555) 987-6543</p>
+                            <p>Email: hello@brewandbean.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="mailto:hello@brewandbean.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Brew & Bean</h3>
+                    <p>Your neighborhood coffee shop</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Get updates on new beans and specials</p>
+                    <form class="newsletter-form" action="mailto:hello@brewandbean.com" method="post" enctype="text/plain">
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Brew & Bean. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
